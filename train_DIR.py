@@ -152,9 +152,9 @@ def train(args):
 
 def reranker_parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train_data_dir', default='../data/taobao/process1/data.train')
-    parser.add_argument('--test_data_dir', default='../data/taobao/process1/data.test')
-    parser.add_argument('--stat_dir', default='../data/taobao/process1/data.stat')
+    parser.add_argument('--train_data_dir', default='../data/taobao/process/data.train')
+    parser.add_argument('--test_data_dir', default='../data/taobao/process/data.test')
+    parser.add_argument('--stat_dir', default='../data/taobao/process/data.stat')
     parser.add_argument('--save_dir', default='../model/taobao/')
     parser.add_argument('--expo_ratio', default=[0.5, 0.4, 0.1], type=list, help='the ratio of exposure')
     parser.add_argument('--seed', default=1234, type=int, help='random seed')
